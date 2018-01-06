@@ -1,0 +1,74 @@
+ub-deliverylocation{
+    
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .item-inner{
+        border-bottom: 0px !important;
+    }
+
+    ion-navbar ion-title{
+        margin-left: 55px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    ion-navbar .toolbar-background{
+        background-color: white;
+    }
+    .fixed-content{
+        background-color: lightgray;
+    }
+
+
+    
+    ion-list.dropoff-list{
+        margin-top: -16px;
+    }
+
+    ion-list ion-list-header.dropoff-list-header{
+    margin: 0px;
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+    ion-list.dropoff-list:nth-child(2){
+        background-color: white;
+        padding: 0px 0px 0px 5px;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    
+    
+    ion-list.dropoff-list:nth-child(3){
+        background-color: white;
+        padding: 0px 0px 0px 5px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    ion-list.dropoff-list:nth-child(4){
+        margin-left: 50px;
+    }
+
+    ion-list.dropoff-list .dropoff-list-pickup{
+
+    }
+
+
+    .done-btn{
+        position: absolute;
+        height: 50px;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        bottom: 0;
+        margin: 0px;
+    }
+
+
+
+}

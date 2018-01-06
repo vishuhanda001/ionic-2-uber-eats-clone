@@ -1,0 +1,41 @@
+<ion-header >
+    <ion-navbar>
+        <ion-title primary>
+            Delivery Location
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+        <ion-searchbar  
+        style="font-family: 'Montserrat', sans-serif"
+        placeholder = "Enter Delivery Address"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)">
+      </ion-searchbar>
+
+      <ion-list>
+          <ion-item *ngFor="let searchresult of searchresults" (click)="selectItem(searchresult)">
+            {{searchresult.description}}
+          </ion-item>
+      </ion-list>
+      
+      <ion-list class="dropoff-list">
+            <ion-list-header class="dropoff-list-header">
+              Dropoff Options
+            </ion-list-header>
+            <ion-item (click)="deliverToDoor()" style="font-size:14px"> <ion-icon  style="margin-right: 20px;font-size: 25px;" ios="ios-home" md="md-home"></ion-icon>Deliver To Door <ion-icon *ngIf="delivertodoor" ios="ios-checkmark-circle" md="md-checkmark-circle" style="margin-left: 153px;color: #32db64;font-size: 25px;"></ion-icon></ion-item>
+            <input *ngIf="delivertodoor"  style="font-size:14px;margin-left:58px;border: 0px;margin-bottom:10px;
+            width: 100%;" placeholder="Apartment number / Suite / Floor">
+            <input *ngIf="delivertodoor" style="font-size:14px;margin-left:58px;border: 0px;
+            width: 100%;" placeholder="Business Name">
+            <ion-item (click)="pickUpOutside()" style="font-size:14px" class="dropoff-list-pickup"><ion-icon style="margin-right: 20px;font-size: 25px;" ios="ios-car" md="md-car"></ion-icon>Pick up Outside<ion-icon *ngIf="!delivertodoor" ios="ios-checkmark-circle" md="md-checkmark-circle" style="margin-left: 153px;color: #32db64;font-size: 25px;"></ion-icon></ion-item>
+          </ion-list>
+          <ion-list>
+              <ion-item style="font-size:14px ;color:#686868" (click)="adddeliveryInstructions()"><ion-icon style="margin-right: 20px;font-size: 25px;" ios="ios-copy" md="md-copy" outline></ion-icon>
+                  Add Delivery Instructions
+              </ion-item>
+          </ion-list>
+      <button class="done-btn" ion-button full color="secondary">Done</button>
+</ion-content>

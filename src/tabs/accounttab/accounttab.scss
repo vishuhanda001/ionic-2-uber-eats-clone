@@ -1,0 +1,49 @@
+ub-tab-account{
+    ion-navbar .toolbar-background{
+        background-color: white !important;
+        // border-bottom: 1px solid rgb(182, 179, 179);
+    }
+
+ion-title ion-icon{
+    font-size: 53px;
+
+}
+
+ion-title ion-label{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-left: 20px !important;
+}
+
+ion-content ion-list ion-item:first-of-type{
+    text-transform: uppercase !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px !important;
+    box-shadow: -14px 9px 36px -21px rgba(0,0,0,0.75) !important;
+}
+
+ion-content ion-list ion-item{
+    text-transform: uppercase !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px !important;
+    box-shadow: -14px 9px 36px -21px rgba(0,0,0,0.75) !important;
+}
+
+ion-item .item-inner{
+    border-bottom: 0px !important;
+}
+ion-content ion-list ion-item ion-icon{
+    color: rgb(100, 92, 92);
+}
+ion-content ion-label{
+    margin-left: 17px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;    
+}
+
+
+
+}

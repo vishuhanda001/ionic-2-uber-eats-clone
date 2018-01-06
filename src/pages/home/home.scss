@@ -1,0 +1,11 @@
+page-home {
+
+
+    ion-tabs div.tabbar{
+        background-color: red !important;
+    }
+    .tabs-md[tabsHighlight=true][tabsPlacement=bottom] > .tabbar > .tab-highlight{
+        width: 0px;
+    }
+
+}

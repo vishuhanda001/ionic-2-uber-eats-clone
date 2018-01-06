@@ -1,0 +1,61 @@
+ub-favourites{
+
+    ion-navbar{
+        font-family: 'Montserrat', sans-serif;
+
+    } 
+
+    
+    ion-navbar .toolbar-background{
+        background-color: white !important;
+
+    }
+    ion-title{
+        margin-left: 65px;
+    }
+
+    .fixed-content{
+        background-color: lightgray;
+    }
+    ion-content ion-list ion-item img{
+        width: 80px;
+        height: 65px;
+    }
+    ion-item .item-inner{
+        border-bottom: 0px !important;
+    }
+    ion-content ion-list ion-item div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    ion-content ion-list.available{
+        margin: 10px 0 16px !important;
+    }
+
+    ion-content ion-list ion-item div span.rest-name{
+        
+    }
+    ion-content ion-list ion-item div span.order-time{
+        margin-left: 27px;
+    }
+    ion-content ion-list ion-item div span.type-food{
+        font-size: 10px;
+        
+    }
+    ion-content ion-list ion-item div span.noof-orders{
+        font-size: 10px;
+        
+    }
+    ion-content ion-list.not-available{
+        margin: 0px;
+        padding-top: 10px
+    }
+    ion-content ion-list.not-available ion-list-header{
+        margin-bottom: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

@@ -1,0 +1,30 @@
+ub-deliveryinstruction{
+
+ion-navbar ion-title{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+.item-inner{
+    border-bottom: 0px !important;
+}
+ion-navbar .toolbar-background{
+    background-color: white;
+}
+ion-textarea  .text-input-md{
+    color: #444;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.done-btn{
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+}

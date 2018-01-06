@@ -1,0 +1,78 @@
+ub-promotions{
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+ion-navbar{
+    font-family: 'Montserrat', sans-serif;
+
+} 
+
+ion-navbar .toolbar-background{
+    background-color: white !important;
+
+}
+ion-title{
+    margin-left: 45px;
+}
+
+.fixed-content{
+    background-color: lightgray;
+}
+ion-item .item-inner{
+    border-bottom: 0px !important;
+}
+
+ion-content ion-searchbar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+ion-content button.apply{
+    position: absolute;
+    top: 1.1%;
+    right: 7%;
+    margin: 4px -5px 5px 0px;
+}
+
+ion-content ion-list ion-list-header{
+    margin-bottom: -7px !important;
+    background-color: transparent !important;
+    padding-left: 10px;
+    height: 43px;  
+}
+ion-content ion-list div{
+    margin: 5px 5px 5px 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+ion-content ion-list div span{
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+
+} 
+ion-content ion-list div span:nth-child(1){
+display: block;
+font-weight: bold;
+font-size: 14px;
+}
+ion-content ion-list div span:nth-child(2){
+    display: block;
+    font-size: 12px;
+    text-align: justify;
+    
+}
+ion-content ion-list div span:nth-child(3){
+    display: block;
+    font-size: 12px;
+
+}
+
+}

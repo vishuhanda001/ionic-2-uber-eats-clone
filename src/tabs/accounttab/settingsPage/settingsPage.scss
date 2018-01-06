@@ -1,0 +1,43 @@
+ub-settings{
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    ion-navbar{
+        font-family: 'Montserrat', sans-serif;
+    
+    } 
+    
+    ion-navbar .toolbar-background{
+        background-color: white !important;
+    
+    }
+    ion-title{
+        margin-left: 80px;
+    }
+    
+    .fixed-content{
+        background-color: lightgray;
+    }
+    ion-item .item-inner{
+        border-bottom: 0px !important;
+    }
+
+    ion-navbar ion-title ion-label{
+        display: inline-block;
+    }
+    ion-navbar ion-title button{
+        vertical-align: top !important;
+        margin-left: 63px !important;
+        background-color: transparent !important;
+        color: black !important;
+        font-family: 'Montserrat', sans-serif !important;
+        margin-top: 6px !important;
+        box-shadow: none !important;
+    }
+    
+
+}

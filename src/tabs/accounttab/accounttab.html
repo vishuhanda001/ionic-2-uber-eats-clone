@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar color="light">
+        <ion-title>
+            <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+            <ion-label>vishu handa</ion-label>
+
+        </ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item (click)="navToFavourites()"> 
+            <ion-icon item-start ios="ios-star" md="md-star"></ion-icon>
+            Your Favourites
+        </ion-item>
+        <ion-item (click)="navToPayement()">
+            <ion-icon item-start ios="ios-card" md="md-card"></ion-icon>
+            Payement
+        </ion-item>
+        <ion-item (click)="navToHelp()">
+            <ion-icon item-start ios="ios-help-buoy" md="md-help-buoy"></ion-icon>
+            Help
+        </ion-item>
+        <ion-item (click)="navToFreeDelivery()">
+            <ion-icon item-start ios="ios-home" md="md-home"></ion-icon>
+            Free Delivery
+        </ion-item>
+        <ion-item (click)="navToFreePromotions()">
+            <ion-icon item-start ios="ios-sunny" md="md-sunny"></ion-icon>
+            Promotions
+        </ion-item>
+        <ion-item (click)="navToDeliverWithUber()">
+            <ion-icon item-start ios="ios-calendar" md="md-calendar"></ion-icon>
+            Deliver With uber
+        </ion-item>
+        <ion-item (click)="navToSettings()">
+            <ion-icon item-start ios="ios-settings" md="md-settings"></ion-icon>
+            Settings
+        </ion-item>
+    </ion-list>
+    <ion-label>
+        About
+    </ion-label>
+</ion-content>

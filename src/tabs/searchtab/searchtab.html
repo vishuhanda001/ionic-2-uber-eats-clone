@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-label>Search</ion-label>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar debounce="300" type="text" placeholder="Search for a restaurent or dish" (click)="onSearch($event)"></ion-searchbar>
+
+    <ion-list *ngIf="showSearchValues">
+        <ion-item>
+            Recent Searches
+        </ion-item>
+        <ion-item *ngFor="let recentSearch of recentSearches">
+            <ion-icon ios="ios-time" md="md-time"></ion-icon>
+            {{recentSearch}}
+        </ion-item>
+        <ion-item>
+            Top Categroies
+        </ion-item>
+        <ion-item *ngFor="let topCategory of topCategories">
+            <ion-icon ios="ios-search" md="md-search"></ion-icon>
+            {{topCategory}}
+        </ion-item>
+    </ion-list>
+
+    <ion-label class="top-Categories" *ngIf="showCategoriesImages">
+        Top Categories
+    </ion-label>
+
+    <virtual-scroll class="virtual-scroll" [items]="showTopCategoriesimages" *ngIf="showCategoriesImages">
+        <ion-item class="items" *ngFor="let showTopCategoriesimage of showTopCategoriesimages;let odd=odd;">
+            <img src="{{showTopCategoriesimage?.item}}">
+            <br *ngIf="odd">
+        </ion-item>
+    </virtual-scroll>
+
+    <ion-label class="more-Categories" *ngIf="showCategoriesImages">
+        More Categories
+    </ion-label>
+
+    <virtual-scroll class="virtual-scroll" [items]="showTopCategoriesimages" *ngIf="showCategoriesImages">
+        <ion-item class="items" *ngFor="let showTopCategoriesimage of showTopCategoriesimages;let odd=odd;">
+            <img src="{{showTopCategoriesimage?.item}}">
+            <br *ngIf="odd">
+        </ion-item>
+    </virtual-scroll>
+
+</ion-content>

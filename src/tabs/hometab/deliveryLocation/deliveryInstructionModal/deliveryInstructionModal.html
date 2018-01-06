@@ -1,0 +1,14 @@
+<ion-header >
+        <ion-navbar>
+            <ion-title primary>
+                Delivery Location
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+
+<ion-content>
+    <ion-item>
+            <ion-textarea type="text" placeholder="Add delivery instructions (buzzer code, leave at the door)" [(ngModel)]="deliveryInstruction"></ion-textarea>
+    </ion-item>
+    <button class="done-btn" ion-button full color="secondary" (click)="closeModal()">Done</button>
+</ion-content>
