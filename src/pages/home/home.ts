@@ -1,9 +1,11 @@
 import { Component,OnInit } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,AlertController } from 'ionic-angular';
 import {Hometab} from '../../tabs/hometab/hometab';
 import {Accounttab} from '../../tabs/accounttab/accounttab';
 import {Orderstab} from '../../tabs/orderstab/orderstab';
 import {Searchtab} from '../../tabs/searchtab/searchtab';
+import {OneSignal} from '@ionic-native/onesignal';
+
 
 
 @Component({
@@ -18,10 +20,11 @@ orderstab = Orderstab;
 searchtab = Searchtab;
 
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private oneSignal: OneSignal,private alertctrl:AlertController) {
 
-    
+   
   }
+  
   
   ngOnInit(){
     

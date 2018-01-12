@@ -3,6 +3,9 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import {OneSignal} from '@ionic-native/onesignal';
+import {LocalNotifications} from '@ionic-native/local-notifications';
+
 
 import {HttpModule} from '@angular/http';
 import { VirtualScrollModule } from 'angular2-virtual-scroll';
@@ -81,6 +84,8 @@ import {Searchtab} from '../tabs/searchtab/searchtab';
     StatusBar,
     SplashScreen,
     DeliveryService,
+    OneSignal,
+    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
